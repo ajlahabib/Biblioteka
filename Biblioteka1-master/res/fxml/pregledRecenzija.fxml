@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.icr.recenzijeController">
+    <stylesheets>
+        <URL value="@/biblioteka.css" />
+    </stylesheets>
+    <columnConstraints>
+    <ColumnConstraints maxWidth="51.200010657310486" minWidth="4.7999876737594604" prefWidth="51.200010657310486" />
+      <ColumnConstraints maxWidth="119.99996337890624" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.80000762939454" minWidth="10.0" prefWidth="97.6" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="462.40001220703124" minWidth="10.0" prefWidth="270.6" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.199951171875" minWidth="10.0" prefWidth="144.2" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="179.60001220703126" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="179.60001220703126" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="179.60001220703126" minHeight="9.799999999999997" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="179.60001220703126" minHeight="0.0" prefHeight="33.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="179.60001220703126" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="179.60001220703126" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="179.60001220703126" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="276.1999839782715" minHeight="10.0" prefHeight="10.4000244140625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="271.2000030517578" minHeight="0.0" prefHeight="39.99997558593748" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="220.00002136230466" minHeight="0.0" prefHeight="32.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="220.00002136230466" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="220.00002136230466" minHeight="2.1999999999999886" prefHeight="22.40001220703124" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="9">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </ListView>
+      <Label id="labela" prefHeight="52.0" prefWidth="366.0" styleClass="labela" text="   Recenzije:" GridPane.columnIndex="2" GridPane.columnSpan="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Label>
+      <Label fx:id="nazivLabela" prefHeight="34.0" prefWidth="254.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label fx:id="autorLabela" prefHeight="30.0" prefWidth="278.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label prefHeight="28.0" prefWidth="274.0" text="  Komentar:" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label prefHeight="44.0" prefWidth="267.0" text=" Iako je radnja romana smještena u XVII stoljeće," GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Label prefHeight="46.0" prefWidth="258.0" text=" ona prelazi okvire i vremena i prostora i " GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label prefHeight="18.0" prefWidth="346.0" text=" pokazuje vječne dileme čovjeka koji promišlja" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Label prefHeight="18.0" prefWidth="258.0" text=" o smislu života." GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Button fx:id="dodajKomentarBtn" mnemonicParsing="false" onAction="#dodajKomentarAction" prefHeight="26.0" prefWidth="270.0" text="Dodaj komentar" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+      <Button fx:id="nazad" alignment="CENTER" mnemonicParsing="false" onAction="#nazadAction" prefHeight="36.0" prefWidth="80.0" text="Nazad" GridPane.columnIndex="2" GridPane.rowIndex="11">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin></Button>
+      <VBox prefHeight="75.0" prefWidth="95.0" GridPane.columnIndex="4" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets left="25.0" top="5.0" />
+         </GridPane.margin>
+         <children>
+            <Button id="slika1" cacheShape="false" centerShape="false" focusTraversable="false" minWidth="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" scaleShape="false" styleClass="slk">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Separator prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="35.0" />
+         </GridPane.margin>
+      </Separator>
+      <Separator prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="35.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="269.0" text=" Ocjena: " GridPane.columnIndex="3" GridPane.rowIndex="9" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets top="15.0" />
+         </GridPane.margin>
+      </Separator>
+      <ScrollBar orientation="VERTICAL" prefHeight="112.0" prefWidth="14.0" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.rowSpan="6">
+         <GridPane.margin>
+            <Insets left="256.0" />
+         </GridPane.margin>
+      </ScrollBar>
+      <ImageView fitHeight="35.0" fitWidth="170.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <image>
+            <Image url="@../img/rate.jpg" />
+         </image>
+         <GridPane.margin>
+            <Insets left="60.0" />
+         </GridPane.margin>
+      </ImageView>
+   </children>
+   <opaqueInsets>
+      <Insets left="10.0" />
+   </opaqueInsets>
+</GridPane>

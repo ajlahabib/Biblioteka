@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.icr.detaljiOKnjiziController">
+    <stylesheets>
+        <URL value="@/biblioteka.css" />
+    </stylesheets>
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.39996337890625" minWidth="10.0" prefWidth="41.400018310546876" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.7999755859375" minWidth="10.0" prefWidth="118.99998168945314" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.60001220703117" minWidth="10.0" prefWidth="276.6000122070312" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.999951171875" minWidth="10.0" prefWidth="129.99997558593748" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.59997558593744" minWidth="10.0" prefWidth="36.199963378906205" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="84.79999618530273" minHeight="10.0" prefHeight="63.000018310546885" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="89.19998779296876" minHeight="0.0" prefHeight="34.199981689453125" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="89.19998779296876" minHeight="0.0" prefHeight="30.200000000000003" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="103.19999999999999" minHeight="0.0" prefHeight="32.599999999999994" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="222.40000000000003" minHeight="0.0" prefHeight="32.600006103515625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="222.40000000000003" minHeight="8.399990844726574" prefHeight="32.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="182.99998779296874" minHeight="0.0" prefHeight="34.39999999999998" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="182.99998779296874" minHeight="0.0" prefHeight="29.399990844726574" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="73.60001525878909" minHeight="0.0" prefHeight="35.99998779296874" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="92.800048828125" minHeight="10.0" prefHeight="65.00002441406252" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="21.399999999999977" minHeight="10.0" prefHeight="14.199987792968727" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label id="labela" prefHeight="51.0" prefWidth="390.0" styleClass="labela" text="  Detalji o knjizi:" GridPane.columnIndex="1" GridPane.columnSpan="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <GridPane.margin>
+            <Insets left="5.0" />
+         </GridPane.margin>
+      </Label>
+      <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="8" />
+      <Label fx:id="nazivKnjigeLabela" prefHeight="18.0" prefWidth="274.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Separator prefHeight="3.0" prefWidth="285.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="25.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label fx:id="autorLabela" prefHeight="0.0" prefWidth="274.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets bottom="25.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="275.0" text="  ISBN:  9958-717-42-5" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="95.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="276.0" text="  Kategorija: Psihološka drama" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets bottom="35.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="274.0" text="  Izdavač: Svjetlost" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="276.0" text="  Izdanje: 2007" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
+      </Separator>
+      <Label prefHeight="18.0" prefWidth="279.0" text="  Jezik: BS" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets bottom="30.0" />
+         </GridPane.margin>
+      </Separator>
+      <Button fx:id="nazad" alignment="CENTER" mnemonicParsing="false" onAction="#zatvoriAction" prefHeight="36.0" prefWidth="80.0" text="Nazad" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Button fx:id="zaduzi" alignment="CENTER" mnemonicParsing="false" onAction="#zaduziAction" prefHeight="36.0" prefWidth="96.0" text="Zaduži knjigu" GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Button>
+      <VBox prefHeight="89.0" prefWidth="109.0" GridPane.columnIndex="3" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets left="45.0" top="10.0" />
+         </GridPane.margin>
+         <children>
+            <VBox>
+               <children>
+                  <Button cacheShape="false" centerShape="false" focusTraversable="false" minWidth="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" scaleShape="false" styleClass="slk">
+                     <VBox.margin>
+                        <Insets left="35.0" right="5.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Label prefHeight="18.0" prefWidth="274.0" text="  Font: 12" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+      <ScrollBar orientation="VERTICAL" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="8">
+         <GridPane.margin>
+            <Insets left="262.0" />
+         </GridPane.margin>
+      </ScrollBar>
+   </children>
+   <padding>
+      <Insets right="5.0" top="10.0" />
+   </padding>
+</GridPane>

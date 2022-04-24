@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="412.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.icr.urediKnjiguController">
+    <stylesheets>
+        <URL value="@/biblioteka.css" />
+    </stylesheets>
+    <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="39.19998779296873" minHeight="10.0" prefHeight="39.19998779296873" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="61.99997558593748" minHeight="10.0" prefHeight="55.60001220703123" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="27.600012207031227" minHeight="2.8000244140624773" prefHeight="14.800024414062477" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="5">
+         <children>
+            <MenuBar cacheShape="false" centerShape="false" focusTraversable="false" scaleShape="false">
+              <menus>
+                <Menu mnemonicParsing="false" text="Registracija korisnika" />
+                <Menu mnemonicParsing="false" text="Registracija knjige" />
+                <Menu mnemonicParsing="false" text="Odabir knjige" />
+                  <Menu mnemonicParsing="false" text="Provjera dostupnosti knjige" />
+                  <Menu mnemonicParsing="false" text="Historija zaduženja" />
+                  <Menu id="id1" mnemonicParsing="false" text="Uredi podatke" />
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <Label id="labela" prefHeight="46.0" prefWidth="341.0" styleClass="labela" text="   Uredi podatke o knjizi:" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Label>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="5">
+         <GridPane.margin>
+            <Insets left="50.0" />
+         </GridPane.margin>
+         <children>
+            <HBox prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Naziv knjige:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldNazivKnjige" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Autor:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldAutorKnjige" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="45.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="ISBN:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldISBN" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="80.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Kategorija:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldKategorija" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="115.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Izdavač:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldIzdavac" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="150.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Izdanje:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldIzdanje" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="185.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Jezik:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldJezik" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="220.0" prefHeight="35.0" prefWidth="340.0">
+               <children>
+                  <Label prefWidth="100.0" text="Font:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fldFont" prefHeight="26.0" prefWidth="151.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="btnNazad" mnemonicParsing="false" onAction="#nazad" prefHeight="36.0" prefWidth="80.0" text="Nazad" GridPane.rowIndex="8">
+         <GridPane.margin>
+            <Insets left="50.0" top="20.0" />
+         </GridPane.margin>
+      </Button>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5" GridPane.rowSpan="2">
+         <children>
+            <Button fx:id="btnSpasiPromjene" mnemonicParsing="false" onAction="#spasiPromjeneAction" prefHeight="32.0" prefWidth="150.0" styleClass="dugmici" text="Spasi promjene">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnObrisiKnjigu" mnemonicParsing="false" onAction="#obrisiKnjiguAction" prefHeight="32.0" prefWidth="150.0" styleClass="dugmici" text="Obriši knjigu">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets top="10.0" />
+         </GridPane.margin>
+      </VBox>
+      <VBox prefHeight="45.0" prefWidth="111.0" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="3" />
+      <Button cacheShape="false" centerShape="false" focusTraversable="false" minWidth="75.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="75.0" scaleShape="false" styleClass="slk" GridPane.columnIndex="4" GridPane.rowIndex="1" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets left="25.0" />
+         </GridPane.margin>
+      </Button>
+   </children>
+</GridPane>
